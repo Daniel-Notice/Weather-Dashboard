@@ -3,7 +3,7 @@
 
 ## Description
 
-https://daniel-notice.github.io/Horiseon-Marketing-Website/
+https://daniel-notice.github.io/Weather-Dashboard/
 
 This is a weather dashboard website that offers its services to users that are looking for the weather in any city they wish. The information provided will be the temperature, wind-speeed and humidity.
 
