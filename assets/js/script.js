@@ -12,11 +12,12 @@ const windmain = document.querySelector(".wind-main");
 const humidity = document.querySelector(".humidity-main");
 const h2location = document.querySelector(".location");
 const leftside = document.querySelector(".left-side");
+const weatherImage = document.querySelector("#weathericon");
 
 //My api Key
 const APIKey = "d0b12f7162c21d128c6108524d623396";
 
-let searchHistory = [];
+let searchHistory = ["London","Texas"];
 
 searchBtn.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent the form from submitting and refreshing the page
@@ -30,11 +31,25 @@ searchBtn.addEventListener("click", function (event) {
     })
     .then(function (data) {
       console.log(data);
-
-      h2location.textContent =
-        data.city.name + " " + "(" + now + ")" + data.list[0].weather[0].icon;
+      //putting all the values on the screen.
+      let dataIcon = data.list[0].weather[0].icon;
+      weatherImage.src = `http://openweathermap.org/img/wn/${dataIcon}.png`;
+      h2location.textContent = data.city.name + " " + "(" + now + ")";
       tempmain.textContent = "Temp: " + data.list[0].main.temp + " °C";
       windmain.textContent = "Wind: " + data.list[0].wind.speed + " KPH";
       humidity.textContent = "Humidity: " + data.list[0].main.humidity + " %";
+
+    const weatherObjects = data.list;
+
+    for (let i = 0; i < weatherObjects.length; i+=5) {
+      const weatherObject = weatherObjects[i];
+
+      // Access properties of each weather object and perform actions
+      console.log(weatherObject);
+      
+      
+    }
+
+
     });
 });
