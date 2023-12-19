@@ -15,7 +15,8 @@ N/A
 
 Below is a screenshot of the homepage. This design displays a simple but effective was to navigate around the website. Content is clear on the webpage and the colours that were used does not conflict which makes it easy for the user to read what's on the page.
 
-![10-server-side-apis-challenge-demo](https://github.com/Daniel-Notice/Weather-Dashboard/assets/144740252/bd022b0e-f2be-4d9b-be14-67456a598597)
+![Capture](https://github.com/Daniel-Notice/Weather-Dashboard/assets/144740252/bb2da45d-d7d5-4556-9b7b-e56dbd1d21f8)
+
 
 
 ## Credits
